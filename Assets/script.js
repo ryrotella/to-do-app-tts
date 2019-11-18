@@ -2,8 +2,8 @@ $(document).ready(function(){
     let template = $(".itemRow:eq(0)").clone();
     //$(".itemRow:eq(0)").clone();
     
-$(".btn-primary").on("click", function(){
-    let entry = document.getElementById("createItem");
+$("#createItem").on("click", "#addButton", function(){
+    let entry = (document).getElementById("createItem");
     let text = "";
     for (let i = 0; i < entry.length; i++){
         text+= entry.elements[i].value;
@@ -13,17 +13,17 @@ $(".btn-primary").on("click", function(){
     } else{
         let check =  confirm("Add '" + text + "' to your list?");
         if (check === true){
-            let newEntry = template.clone();
-            newEntry.appendTo("#theList")
+            let newEntry = $(template).clone();
+            $(newEntry).appendTo("#theList")
             .addClass("newItem")
             .find("h2")
             .replaceWith("<h2>" + text + "<h2>")
-            .addClass("toDoItem");         
+            .addClass("toDoItem");       
         }
     }
 })
 
-$("ul").on("click", "li", function(){
+$("#theList").on("click", "li", function(){
     if ($(this).find(".btn-light").text() === "Complete"){
         $(this).find(".toDoItem").wrap("<strike>");
         $(this).find(".btn-light").text("Undo");
