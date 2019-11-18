@@ -1,0 +1,104 @@
+.navbar{
+	background-color: #c9a387;
+}
+
+body{
+	background-color: #c9a387;
+}
+
+.nav-link, .username, .dateTimeHeader{
+	color: #fffdd0;
+}
+
+.usernameHeader{
+	margin-right: 10%;
+}
+
+.container{
+	background-color: #FFFACD;
+}
+
+.jumbotron-fluid{
+	color: #c9a387;
+}
+
+.mx-auto{
+	text-align: center;
+}
+
+::placeholder{
+	color: #fffdd0;
+}
+
+#priority{
+	width: 20%; 
+	padding: 10px; 
+	margin-right: 40px;
+	background-color: #ffbcd9;
+	color: #fffdd0;
+}
+
+#createItem{
+	background-color: #FFFACD;
+}
+
+#item{
+	resize: none; 
+	border-radius: 4px; 
+	padding: 10px;
+	background-color: #ffbcd9;
+	color: #fffdd0;
+}
+
+#addButton{
+	padding: 10px; 
+	margin-left: 20px;
+	background-color: #ffbcd9;
+	font-weight: bold; 
+	color: #fffdd0;
+}
+
+li{
+	list-style-type: none;
+}
+
+.itemRow{
+	text-align: center;
+	color: #c9a387;
+}
+
+.itemRow:hover{
+	background-color: #ffbcd9;
+	color: #fffdd0;
+}
+
+a:hover{
+	color: #ffbcd9;
+}
+
+.btn-light{
+	background-color: #c9a387;
+	color: #fffdd0;
+}
+
+.btn-light:hover{
+	background-color: lime;
+	color: #fffdd0;
+}
+
+.toDoItem{
+	text-align: center;
+}
+
+.footer{
+	border-top: navy solid 1px;
+}
+
+#footerText{
+	text-align: center;
+}
+
+.btn-warning{
+	background-color: #b47f59;
+	color: #fffdd0
+}
